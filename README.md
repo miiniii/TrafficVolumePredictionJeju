@@ -1,12 +1,7 @@
-# README
-
 # DACON
 
----
 
 ## 🚗 제주도 도로 교통량 예측 AI 경진대회
-
----
 
 ### ****📅 프로젝트 진행기간****
 
@@ -36,33 +31,34 @@
     - correlation matrix(전체)
         - 상관계수가 높은 변수들이 많지 않음(0.2 이상인 변수 4개 존재)
             
-            ![Untitled](README%206e23b819b4854f35bac433acc0ffb30f/Untitled.png)
+            ![상관계수](https://user-images.githubusercontent.com/104626180/202994809-7f7c1d7c-1741-410d-b978-b884e1bfd110.png)
             
     - correlation matrix(수치형)
     
-    ![Untitled](README%206e23b819b4854f35bac433acc0ffb30f/Untitled%201.png)
+    ![수치형](https://user-images.githubusercontent.com/104626180/202994928-a50fbffa-385f-4650-bcd6-6063fe2bff81.png)
     
     - PointBiSerial correlation (명목형)
         
-        ![Untitled](README%206e23b819b4854f35bac433acc0ffb30f/Untitled%202.png)
+        ![명목형1](https://user-images.githubusercontent.com/104626180/202995102-e979bf31-3d48-4f3e-b292-b6fb14c0a44f.png)
         
-        ![Untitled](README%206e23b819b4854f35bac433acc0ffb30f/Untitled%203.png)
+        ![명목형2](https://user-images.githubusercontent.com/104626180/202995144-2f83c146-2cdb-46d5-a8a5-439cd15596ef.png)
         
     - 추이그래프
         - base_date = 2022년 7월 기준 교통량 증가
             
             
-            ![Untitled](%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%AE%E1%84%83%E1%85%A9%20%E1%84%83%E1%85%A9%E1%84%85%E1%85%A9%20%E1%84%80%E1%85%AD%E1%84%90%E1%85%A9%E1%86%BC%E1%84%85%E1%85%A3%E1%86%BC%20%E1%84%8B%E1%85%A8%E1%84%8E%E1%85%B3%E1%86%A8%20AI%20%E1%84%80%E1%85%A7%E1%86%BC%E1%84%8C%E1%85%B5%E1%86%AB%E1%84%83%E1%85%A2%E1%84%92%E1%85%AC%2036db157ab9044ad89c7718b707ac2b8d/%E1%84%8C%E1%85%A6%E1%84%86%E1%85%A9%E1%86%A8%20%E1%84%8B%E1%85%A5%E1%86%B9%E1%84%82%E1%85%B3%E1%86%AB%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%20b9dd13c3256247e2a980395f18429036/EDA%20e849da4a9b39415286fce4f22d6daf82/Untitled.png)
+            ![base_date1](https://user-images.githubusercontent.com/104626180/202995257-d46402bf-55a3-4b49-9852-68d58141648c.png)
             
-            ![Untitled](README%206e23b819b4854f35bac433acc0ffb30f/Untitled%204.png)
+            ![base_date2](https://user-images.githubusercontent.com/104626180/202995306-0aa691be-f2d1-4679-bceb-57d3a85ac244.png)
+
             
     - base_hour = 00시-05시,18시-24시 교통량 감소, 05시-18시 교통량 증가 (차이가 큼)
         
-        ![Untitled](README%206e23b819b4854f35bac433acc0ffb30f/Untitled%205.png)
+        ![base_hour](https://user-images.githubusercontent.com/104626180/202995378-790ab728-c3e3-4df3-b68f-279ce438d055.png)
         
     - day_of_week = 금요일 교통량 증가, 주말 교통량 감소 (큰차이 없음)
         
-        ![Untitled](README%206e23b819b4854f35bac433acc0ffb30f/Untitled%206.png)
+        ![base_week](https://user-images.githubusercontent.com/104626180/202995461-3d67bbed-d5e9-4076-9bdf-c8d37a518230.png)
         
 - 파생변수
     - distance(km 기준)
@@ -88,7 +84,7 @@
     - 7월 16일 이후 데이터(distance + 유동지수 추가)
         - 7월 16일 이후 다른 추이를 보여서 나눠봄
         
-        ![Untitled](README%206e23b819b4854f35bac433acc0ffb30f/Untitled%207.png)
+        <img width="1074" alt="modeling" src="https://user-images.githubusercontent.com/104626180/202995601-4f2df3d9-1662-48d2-8cae-aac02f1f4a01.png">
         
     - 21년 9월 ~ 22년 6월 데이터 (distance + 상대유동지수 + 7월 상대유동지수 추가)
     - 7월 데이터(distance + 상대유동지수 + 7월 상대유동지수 추가)
@@ -100,7 +96,7 @@
 - ensemble
     - 각각의 모델에서 나온 결과값을 mean, median을 이용해서 ensemble
     
-    ![Untitled](README%206e23b819b4854f35bac433acc0ffb30f/Untitled%208.png)
+    <img width="1020" alt="last" src="https://user-images.githubusercontent.com/104626180/202995684-d8a092ba-2ab4-40a0-a859-32438c97fc21.png">
     
 
 ### ****🏅 결과****
