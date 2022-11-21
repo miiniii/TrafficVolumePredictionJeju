@@ -22,7 +22,8 @@
 
 - train : 4,701,217개
 - test : 291,241개
-- columns : 넣어야 할지 ??
+- columns 
+![columns](https://user-images.githubusercontent.com/104626180/202997045-7a679a11-f40b-4213-8a0d-f0c8bc2e3416.png)
 - 외부 데이터셋 : [제주시 일일 단위 구간별 평균 통행 속도 정보](http://www.jejuits.go.kr/open_api/open_apiView.do) (API key 신청 후 사용)
 
 ### ****⚙️ Preprocess****
